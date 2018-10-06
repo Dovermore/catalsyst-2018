@@ -1,0 +1,55 @@
+<!--
+
+THE EVENTS PAGE IS LEFT IN AT ABSOLUTE MINIMUM VIABLE PRODUCT TO DEMONSTRATE
+THE ROUGH PLANNED FUNCTIONALITY OF THIS SECTION OF THE WEBSITE.
+
+-->
+
+
+
+<%- include('./partials/initial', {title: 'Events', status: 'member'}) %>
+
+    <div class="mx-auto bg-light w-25 mt-0 mb-3 px-3 py-3 rounded shadow-sm" style="min-width: 350px;">
+        <h2 class="ml-2 text-center font-rubik ls-2 mx-auto mb-0 text-uppercase font-weight-bold">Upcoming Events</h2>
+
+            <!--<form action="/action_page.php">-->
+                <!--<div class="form-group form-inline mb-0">-->
+                    <!--<div class="mx-auto input-group">-->
+                        <!--<input type="text" class="form-control form-control-sm border-right-0 rounded-left-only" id="usr" placeholder="Find teams" size=20 required>-->
+                        <!--<button type="submit" class="btn btn-primary btn-sm rounded-right-only">Search</button>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</form>-->
+
+        <hr/>
+
+        <div class="justify-content-between">
+            <!--<ul class="nav nav-pills mt-3 justify-content-center">-->
+                <!--<li class="nav-item">-->
+                    <!--<a class="nav-link active" data-toggle="tab" href="#details">Running</a>-->
+                <!--</li>-->
+                <!--<li class="nav-item">-->
+                    <!--<a class="nav-link" data-toggle="tab" href="#details">Your Events</a>-->
+                <!--</li>-->
+                <!--<li class="nav-item">-->
+                    <!--<a class="nav-link" data-toggle="tab" href="#statistics">Past Events</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+            <div>
+                <!--<h5 class="text-center">Your Teams</h5>-->
+                <div>
+                    <!--<div class="card d-inline-block bg-light mt-3" id = "allteams">-->
+                    <%- include("./partials/placeholderevent",
+                    {
+                        name: 'The Australian University Donor Push',
+                        description: 'The AUSUNI Donor Push is an event which all Australian Universities are partaking in.\
+                        The aim is for each university to have 700 people donating, a very small portion of their monstrous cohort.',
+                        goal: '350L',
+                        teams: '37'}) %>
+                    <%- include("./partials/placeholderevent", {name: 'The Tech Giants\' Giant Donation', description: '.', goal: '100L', teams: '19'}) %>
+                    <%- include("./partials/placeholderevent", {name: 'University of Melbourne College Competition', description: '.', goal: '20L', teams: '6'}) %>
+                </div>
+            </div>
+        </div>
+
+<%- include('./partials/final') %>

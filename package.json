@@ -1,0 +1,37 @@
+{
+  "name": "donor",
+  "version": "1.0.0",
+  "description": "Donor landing page",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "chart.js": "^2.7.2",
+    "csurf": "^1.9.0",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "jquery": "^3.3.1",
+    "mongodb": "^3.0.8",
+    "mongoose": "^5.0.18",
+    "nodemon": "^1.17.4",
+    "popper.js": "^1.14.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ../views/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wmorphy/Donor.git"
+  },
+  "keywords": [
+    "donor"
+  ],
+  "author": "wmorphy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wmorphy/Donor/issues"
+  },
+  "homepage": "https://github.com/wmorphy/Donor#readme"
+}

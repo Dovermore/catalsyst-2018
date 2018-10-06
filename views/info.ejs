@@ -1,0 +1,47 @@
+<%- include('./partials/initial', {title: 'Information', status: 'both'}) %>
+
+    <%- include('./partials/loading') %>
+
+    <div class="mx-auto bg-light w-50 mt-0 mb-3 px-3 py-3 rounded shadow-sm contentDiv" style="min-width: 350px;  opacity: 0;">
+        <h2 class="text-uppercase font-rubik ls-2 font-weight-bold mb-3 text-center">Donors are life savers</h2>
+        <p class="mb-3 text-center" >Your donations save lives every day. One third of blood donations help people with cancer and other blood diseases. Other areas the blood helps people
+        are anemia patients, surgery patients, burn victims, other heart stomach and kidney diseases patients, trauma victims.</p>
+
+        <hr/>
+
+        <h3 class="text-uppercase font-rubik ls-2 font-weight-bold mb-3 text-center">Find out more information</h3>
+
+        <!--<div class="text-center">-->
+        <ul class='nav nav-pills justify-content-center' role='tablist'>
+        <li><a class='nav-link' data-toggle='tab' href='#blood'>Blood Donations</a></li>
+        <li><a class='nav-link' data-toggle='tab' href='#plasma'>Plasma Donations</a></li>
+        <li><a class='nav-link' data-toggle='tab' href='#bonemarrow'>Bone Marrow Registry</a></li>
+        </ul>
+        <!--</div>-->
+
+        <hr/>
+
+        <div class='tab-content'>
+            <div id='blood' class='mt-3 tab-pane fade'>
+                <h4 class="text-uppercase font-rubik ls-2 font-weight-bold mb-3 text-center">Blood Donations</h4>
+                <h6 class="text-center" >ONE THIRD OF BLOOD DONATIONS HELP TREAT PEOPLE WITH CANCER.</h6>
+                <p class="mb-3 text-center" >
+                    Blood is surprisingly versatile. The blood you donate can be made into 22 different medical treatments.</p>
+            </div>
+            <div id='plasma' class='mt-3 tab-pane fade'>
+                <h4 class="text-uppercase font-rubik ls-2 font-weight-bold mb-3 text-center">Plasma Donations</h4>
+                <p class="mb-3 text-center" >Plasma is a powerful and versatile part of your blood. Today, it can be used in 18 life-giving ways,
+                    + from treating serious burns and cancer, to protecting people with brain or blood disorders.</p>
+                <p class="mb-3 text-center" >Growing patient needs means that Australia’s demand for plasma is growing rapidly each year.
+                    Donating plasma gives you the chance to help even more Australians enjoy a better quality of life.</p>
+            </div>
+            <div id='bonemarrow' class='mt-3 tab-pane fade'>
+                <h4 class="text-uppercase font-rubik ls-2 font-weight-bold mb-3 text-center">The Bone Marrow Registry</h4>
+                <p class="mb-3 text-center" >
+                    Many Australians each year are diagnosed with leukaemia or other fatal blood disorders. A bone marrow or haemopoietic stem cell transplant is the only possibility of cure for many of these patients.
+                    Donors need to be specifically matched to the patient which can make it very difficult to find a donor for certain patients with rare tissue types. Only 1 in 1,500 donors will be asked to donate for a patient requiring a transplant in any given year.</p>
+            </div>
+        </div>
+    </div>
+
+<%- include('./partials/final') %>

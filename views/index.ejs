@@ -1,0 +1,67 @@
+<%- include('./partials/initial', {title: 'Home', status: 'guest'}) %>
+
+    <div class="mx-auto bg-light w-50 mt-0 mb-3 px-3 py-3 rounded shadow-sm" style="min-width: 350px;">
+
+        <h2 class="font-rubik text-center">Donating made <strong class="font-red">easy</strong>.</h2>
+
+        <hr/>
+
+        <div class="row px-3 mt-4">
+            <div class="media col-lg-6">
+                <img src="img/add.png" alt="Add" class="mr-3" style="width:30px;">
+
+                <div class="media-body">
+                    <h5 style="font-size: 1.2em; font-weight: 600;">Book all your appointments</h5>
+                    <p>Blood, Bone, Plasma. It doesn't matter what type, you can do it all easily here!</p>
+                </div>
+            </div>
+            <div class="media col-lg-6">
+                <img src="img/graph.png" alt="Graph" class="mr-3" style="width:30px;">
+
+                <div class="media-body">
+                    <h5 style="font-size: 1.2em; font-weight: 600;">Get donation statistics</h5>
+                    <p>See how many lives you've saved, or litres of blood you've donated.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row px-3 mt-0">
+            <div class="media col-lg-6">
+                <img src="img/team.png" alt="Friends" class="mr-3" style="width:30px;">
+
+                <div class="media-body">
+                    <h5 style="font-size: 1.2em; font-weight: 600;">Donate with your friends</h5>
+                    <p>It can be intimidating donating for the first time, why not bring friends along?</p>
+                </div>
+            </div>
+            <div class="media col-lg-6">
+                <img src="img/award.png" alt="Award" class="mr-3" style="width:30px;">
+
+                <div class="media-body">
+                    <h5 style="font-size: 1.2em; font-weight: 600;">Compete with teams</h5>
+                    <p> Participate in events with your friends, work place or even your university!</p>
+                </div>
+            </div>
+
+        </div>
+
+        <ul class="nav nav-pills">
+            <li class="nav-item mx-auto">
+                <h6 class="mb-0" style="font-size: 1em;"><a class="nav-link active" href="information">Find out more</a></h6>
+            </li>
+        </ul>
+
+        <hr/>
+
+        <h3 class="text-center mb-3 font-rubik" style="font-size: 1.75em;">Want to get involved?</h3>
+        <ul class="nav nav-pills flex-column">
+            <li class="nav-item mx-auto">
+                <h6 class="mb-0" style="font-size: 1em;"><a class="nav-link active px-3 py-2 bg-success" href="signup">Create an account</a></h6>
+            </li>
+            <li class="nav-item mx-auto">
+                <a class="nav-link" href="signin">Already have an account?</a>
+            </li>
+        </ul>
+    </div>
+
+<%- include('./partials/final') %>

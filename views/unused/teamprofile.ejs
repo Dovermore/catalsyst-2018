@@ -1,0 +1,196 @@
+<%- include('./partials/initial', {title: 'Team Profile', status: 'member'}) %>
+
+    <div class="mx-auto bg-light w-50 mt-0 mb-3 px-3 py-3 rounded shadow-sm" style="min-width: 350px;">
+        <div class="justify-content-between">
+            <div>
+                <div class="media px-2 pt-1">
+                    <img src='img/'+<%= teamPhoto %> class="border border-light mr-4" width="75px">
+
+                    <div class="media-body align-self-center">
+                        <h4 class="mb-1 font-rubik ls-1"><strong><%= teamName%></strong></h4>
+                        <p class="mb-0"><img src="img/torso.png" width="16px"> 100 <button type="button" class="ml-2 btn btn-outline-primary px-2 py-1"><h6 class="mb-0 small">Join Team</h6></button></p>
+
+                    </div>
+                </div>
+
+                <ul class="nav nav-tabs mt-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#details">Team Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#statistics">Team Statistics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#appointments">Team Appointments</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content mt-3">
+                    <div class="tab-pane container fade show active" id="details">
+                        <h3 class="font-rubik text-uppercase">Members</h3>
+                        <p>
+                            <%= members %>
+                        </p>
+
+                        <hr/>
+
+                    </div>
+                    <div class="tab-pane container fade" id="statistics">
+                        <div class="row mx-auto w-100">
+                            <div class="col-sm-6 align-self-center">
+                                <h1 class="text-center font-weight-bold font-rubik ls-2 display-4">50</h1>
+                                <h5 class="text-center font-rubik ls-1">Donations Made</h5>
+
+                                <hr/>
+
+                                <h1 class="text-center font-weight-bold font-rubik ls-2 display-4">27</h1>
+                                <h5 class="text-center font-rubik ls-1">Litres Donated</h5>
+
+                                <hr/>
+
+                                <h1 class="text-center font-weight-bold font-rubik ls-1 display-4">5</h1>
+                                <h5 class="text-center font-rubik ls-1">Lives Saved</h5>
+                            </div>
+
+                            <div class="col-sm-6 text-center" id="pieGraph">
+                                <h1>Donations</h1>
+                                <canvas id="myChart" class="mx-auto" width="180" height="180"></canvas>
+
+                                <hr/>
+
+                                <div class="text-left d-inline-block">
+                                    <h6>Key</h6>
+                                    <div class="label right"><div class="graphKeyItem bg-danger"></div> Blood Donations</div>
+                                    <div class="label right"><div class="graphKeyItem bg-primary"></div> Plasma Donations</div>
+                                    <div class="label right"><div class="graphKeyItem bg-warning"></div> Bone Marrow Donations</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane container fade" id="appointments">
+                        <h3 class="font-rubik text-uppercase">Past Appointments</h3>
+                        <div style="max-height: 500px; overflow-y: auto;">
+                            <table class="table table-striped">
+                                <thead>
+                                    <th>Date</th>
+                                    <th>Location</th>
+                                    <th class="text-center">Blood</th>
+                                    <th class="text-center">Plasma</th>
+                                    <th class="text-center">Bone</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>08/05/2018</td>
+                                        <td>Melbourne Central</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                        <td class="text-danger font-weight-bold text-center">&times;</td>
+                                        <td class="text-danger font-weight-bold text-center">&times;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>08/02/2018</td>
+                                        <td>Melbourne Central</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                        <td class="text-danger font-weight-bold text-center">&times;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>08/11/2017</td>
+                                        <td>Melbourne Central</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                        <td class="text-danger font-weight-bold text-center">&times;</td>
+                                        <td class="text-danger font-weight-bold text-center">&times;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>08/08/2017</td>
+                                        <td>Melbourne Central</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>08/08/2017</td>
+                                        <td>Melbourne Central</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>08/08/2017</td>
+                                        <td>Melbourne Central</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>08/08/2017</td>
+                                        <td>Melbourne Central</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>08/08/2017</td>
+                                        <td>Melbourne Central</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>08/08/2017</td>
+                                        <td>Melbourne Central</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>08/08/2017</td>
+                                        <td>Melbourne Central</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>08/08/2017</td>
+                                        <td>Melbourne Central</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>08/08/2017</td>
+                                        <td>Melbourne Central</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>08/08/2017</td>
+                                        <td>Melbourne Central</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>08/08/2017</td>
+                                        <td>Melbourne Central</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                        <td class="text-success font-weight-bold text-center">&#10004;</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+<%- include('./partials/final') %>

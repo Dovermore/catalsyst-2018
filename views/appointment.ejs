@@ -1,0 +1,102 @@
+<%- include('./partials/initial', {title: 'Book an Appointment', status: 'member'}) %>
+
+    <div class="mx-auto bg-light w-25 mt-0 mb-3 px-3 py-3 rounded shadow-sm text-center" style="min-width: 350px;">
+        <h2 class="text-center font-rubik ls-2 mb-3 text-uppercase font-weight-bold">Book Appointment</h2>
+
+        <hr/>
+        <form class="p-0" action="/" onsubmit="">
+        <h5 class="text-center font-rubik">What would you like to do?</h5>
+        <div class="d-inline-block text-left">
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">Book a Blood donation
+            </label>
+        </div>
+        <div class="form-check mt-1">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">Book a Plasma donation
+            </label>
+        </div>
+        <div class="form-check mt-1">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">Join the Bone Marrow Registry
+            </label>
+        </div>
+        </div>
+
+        <hr/>
+
+        <h5 class="text-center font-rubik">Just you, or with friends?</h5>
+
+        <div class="d-inline-block text-left">
+        <div class="form-check-inline">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optradio">Individual
+            </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input groupDono" name="optradio">Group
+            </label>
+        </div>
+        </div>
+
+            <div class="groupInvite" hidden>
+
+        <hr/>
+
+        <!-- FUNCTIONALITY NOT IMPLEMENTED DUE TO TIME CONSTRAINTS -->
+
+        <h6 class="mt-2 mb-0 font-weight-bold">Invite Friends</h6>
+        <div class="form-group form-inline mb-3">
+            <div class="mx-auto">
+                <p class="mb-1 font-weight-bold small">(by donor number or email)</p>
+                <input type="text" class="form-control" id="usr" size=30 required>
+                <button class="btn btn-outline-primary" type="button" onclick="alert('User not found.')">Invite</button>
+            </div>
+        </div>
+
+        <h6 class="font-weight-bold">Invited</h6>
+        <div>
+            <div style="min-width: 300px; height: 300px; overflow-y: scroll;" class="text-left px-2 border rounded d-inline-block">
+                <table class="table table-borderless">
+                    <tbody>
+                    <tr>
+                        <td class="pl-0">
+                            <h6>Addison Scott-Fleming <span class="text-danger font-weight-bold deleteEntry">&times;</span></h6>
+                            <p class="small mb-0">addisonsf.personal@gmail.com | 8008135</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pl-0">
+                            <h6>Addison Scott-Fleming <span class="text-danger font-weight-bold deleteEntry">&times;</span></h6>
+                            <p class="small mb-0">addisonsf.personal@gmail.com | 8008135</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pl-0">
+                            <h6>Addison Scott-Fleming <span class="text-danger font-weight-bold deleteEntry">&times;</span></h6>
+                            <p class="small mb-0">addisonsf.personal@gmail.com | 8008135</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pl-0">
+                            <h6>Addison Scott-Fleming <span class="text-danger font-weight-bold deleteEntry">&times;</span></h6>
+                            <p class="small mb-0">addisonsf.personal@gmail.com | 8008135</p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </div>
+
+        <hr/>
+
+        <%- include('./partials/appointmentdets') %>
+
+        <button type="submit" class="btn btn-primary">Book Appointment</button>
+
+    </div>
+
+<%- include('./partials/final') %>

@@ -1,0 +1,16 @@
+<%- include('./partials/initial', {title: 'News Feed', status: 'member'}) %>
+
+    <div class="mx-auto bg-light w-50 mt-0 mb-3 px-3 py-3 rounded shadow-sm" style="min-width: 350px;">
+        <h2 class="text-uppercase font-rubik ls-2 text-center font-weight-bold">Your News Feed</h2>
+        <hr/>
+        <div id="append" class="w-100" style="overflow-y: scroll; max-height: 600px;">
+
+        </div>
+        <!--<div>-->
+            <!--<button id="loadMore" type="button" class="btn btn-outline-primary d-block mx-auto"-->
+                    <!--onclick="startNotifications()">Load More</button>-->
+        <!--</div>-->
+
+    </div>
+
+<%- include('./partials/final') %>

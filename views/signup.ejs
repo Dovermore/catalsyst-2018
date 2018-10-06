@@ -1,0 +1,131 @@
+
+<%- include('./partials/initial', {title: 'Sign Up', status: 'guest'}) %>
+
+
+            <div class="mx-auto bg-light w-50 mt-0 mb-3 px-3 py-3 rounded shadow-sm" style="min-width: 450px;">
+                <form id="needs-validation" action="/home"  onsubmit="createNew()" novalidate>
+
+
+                <h2 class="font-rubik font-weight-bold text-center ls-2 text-uppercase mb-3">Account Creation</h2>
+
+                <hr/>
+
+                <h6 class="font-weight-bold mt-2">Personal Details</h6>
+                <p>
+
+                    <div id="myForm" class="form-group form-inline mb-3">
+                        <div class="ml-2">
+                            <!--FirstName-->
+                            <p class="ml-1 mb-1 font-weight-bold">First Name <span class="text-danger">*</span></p>
+                            <input id="firstName" type="text" class="form-control" size=20 required/>
+                        </div>
+                        <div class="ml-2">
+                            <!--SURNAME-->
+                            <p class="ml-1 mb-1 font-weight-bold">Surname <span class="text-danger">*</span></p>
+                            <input id="surname" type="text" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group form-inline">
+                        <div>
+                            <!--EMAIL-->
+                            <p class="ml-1 mb-1 font-weight-bold">Email <span class="text-danger">*</span></p>
+                            <input id="email" type="text" class="form-control"  size=30 required>
+
+                            <div class="invalid-feedback">Please enter a valid email.</div>
+                            <div class="valid-feedback">&nbsp;</div>
+                        </div>
+                        <div>
+                            <!--DATEOFBIRTH-->
+                            <p class="ml-1 mb-1 font-weight-bold">Date of birth <span class="text-danger">*</span></p>
+                            <input id="datepicker" width="150" class=" mx-auto" required data-provide="datepicker">
+                            <!--<input id="dateOfBirth" type="text" class="form-control ml-1 date"  >-->
+                            <div class="invalid-feedback">Please enter a valid email.</div>
+                            <div class="valid-feedback">&nbsp;</div>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group form-inline mb-3">
+                        <div>
+                            <!--MOBILE-->
+                            <p class="ml-1 mb-1 font-weight-bold">Mobile <span class="text-danger">*</span></p>
+                            <input id="mobile" type="number" class="form-control" size=15 required>
+                            <div class="invalid-feedback">Please enter a valid mobile number.</div>
+                            <div class="valid-feedback">&nbsp;</div>
+                        </div>
+                        <div>
+                            <!--PASSWORD-->
+                            <p class="ml-1 mb-1 font-weight-bold">Password <span class="text-danger">*</span></p>
+                            <input id="password" type="password" class="form-control ml-1" size=15 required>
+                            <div class="invalid-feedback ml-1">Please enter a valid mobile number.</div>
+                            <div class="valid-feedback ml-1">&nbsp;</div>
+                        </div>
+                    </div>
+
+                </p>
+
+                <hr/>
+
+                <h6 class="font-weight-bold mt-2">Address</h6>
+
+                <p>
+                    <div class="form-group form-inline mb-3">
+                        <div>
+                            <!--ADDRESS-->
+                            <p class="ml-1 mb-1 font-weight-bold">Address <span class="text-danger">*</span></p>
+                            <input id="address" type="text" class="form-control"  size=30 required>
+                        </div>
+                    </div>
+
+                    <div class="form-group form-inline mb-3">
+                        <div>
+                            <!--SUBURB/CITY-->
+                            <p class="ml-1 mb-1 font-weight-bold">Suburb/City <span class="text-danger">*</span></p>
+                            <input id="city" type="text" class="form-control"  size=15 required>
+                        </div>
+
+                        <div class="ml-2">
+                            <!--POSTCODE-->
+                            <p class="ml-1 mb-1 font-weight-bold">Postcode <span class="text-danger">*</span></p>
+                            <input id="postcode" type="text" class="form-control"  size=6 required>
+                        </div>
+
+                        <div class="ml-2">
+                            <!--STATE-->
+                            <p class="ml-1 mb-1 font-weight-bold">State<span class="text-danger">*</span></p>
+                            <!--state selector-->
+                            <select id="state" class="custom-select" required>
+                                <option selected disabled hidden></option>
+                                <option value="1">NSW</option>
+                                <option value="2">VIC</option>
+                                <option value="3">WA</option>
+                                <option value="4">SA</option>
+                                <option value="5">TAS</option>
+                                <option value="6">ACT</option>
+                                <option value="7">NT</option>
+                            </select>
+                        </div>
+                    </div>
+                </p>
+
+                <hr/>
+
+                <div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                    <label class="custom-control-label" for="customControlValidation1">Agree to terms and services.</label>
+                    <div class="invalid-feedback">Please agree to the terms of the website.</div>
+                </div>
+                <div>
+
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <button  class="btn btn-info" type="submit">Submit form</button>
+                    </li>
+                </ul>
+
+                </div>
+
+            </form>
+            </div>
+
