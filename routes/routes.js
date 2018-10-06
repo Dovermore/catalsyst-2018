@@ -22,7 +22,7 @@ router.get("/eventpage", controller.fetchEventPage);
 router.get("/events", controller.fetchEvents);
 // router.get("/teamprofile", controller.fetchTeam);
 router.get("/book", controller.fetchBookApp);
-
+router.get("/chat",controller.fetchChat);
 
 
 
