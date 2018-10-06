@@ -1,10 +1,4 @@
 // Profile functions
-
-var userID="";
-var userdoc = $.getJSON('/api-activeuserid', function(doc) {
-    userID = doc.donorID;
-});
-
 // DOM Ready
 $(document).ready(function() {
 
@@ -18,7 +12,6 @@ $(document).ready(function() {
 
     }
 
-
     if (pathname == "/profile") {
         processProfileData();
         processDonationData();
@@ -28,9 +21,6 @@ $(document).ready(function() {
 });
 
 
-
-
-
 // CREATE NEW ACCOUNT
 // calls function to create a new account
 function createNew() {
@@ -38,6 +28,7 @@ function createNew() {
         + '/' + $("#address").val() + '/' + $("#city").val() + '/' + $("#postcode").val() + '/'
         + $("#state").val() + '/' + $("#mobile").val() + '/' + $("#email").val());
     //reallocate window to Home
+
     $.get('/api-activeuserid/' + $("#email").val(), function (doc) {
     });
     window.location.href = "/home";
@@ -72,10 +63,6 @@ var userdoc = $.getJSON('/api-activeuserid', function(doc) {
 
 });
 }
-
-
-
-
 
 // FILL PROFILE DATA
 // Gets relevent information from current user and appends it
