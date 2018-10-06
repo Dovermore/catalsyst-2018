@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="eef0d646-9c99-4bf7-934f-d3ded1c39d60" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
@@ -11,6 +12,9 @@
       <change beforePath="$PROJECT_DIR$/views/partials/initial.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/initial.ejs" afterDir="false" />
 
     </list>
+=======
+    <list default="true" id="eef0d646-9c99-4bf7-934f-d3ded1c39d60" name="Default" comment="" />
+>>>>>>> Stashed changes
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -406,14 +410,18 @@
       <workItem from="1527303993580" duration="593000" />
 
       <workItem from="1538799627449" duration="422000" />
-      <workItem from="1538810736536" duration="1125000" />
+      <workItem from="1538810736536" duration="1295000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
 
     <option name="totallyTimeSpent" value="129849000" />
 
+=======
+    <option name="totallyTimeSpent" value="130019000" />
+>>>>>>> Stashed changes
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
