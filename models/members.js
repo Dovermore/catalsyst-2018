@@ -13,6 +13,4 @@ var MemberSchema = new mongoose.Schema(
     }
 );
 
-
-
 mongoose.model('members', MemberSchema);
