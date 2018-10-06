@@ -10,22 +10,15 @@ var Teams = mongoose.model('teams');
 var createMember = function(req,res){
 
     var member = new Members({
-        "donorID": 'Donate to find out',
         "password": req.params.pw,
         "firstname": req.params.first,
         "lastname": req.params.last,
         "dateofbirth": req.params.DOB,
-        "address": req.params.address,
-        "suburb": req.params.suburb,
-        "postcode": req.params.postcode,
         "state": req.params.state,
-        "phone": req.params.phone,
+        "schoolyear": req.params.schoolyear,
         "email": req.params.email,
-        "bloodtype": 'Donate to find out',
-        "haemoglobin": 'Donate to find out',
-        "height": 'Donate to find out',
-        "weight": 'Donate to find out'
     });
+
     member.save(function(err,newMember){
         if(!err){
             res.send(newMember);
@@ -36,7 +29,6 @@ var createMember = function(req,res){
 
 };
 
-
 // Fetch all teams
 var findAllTeams = function(req,res){
     Teams.find(function(err,teams){
@@ -46,7 +38,7 @@ var findAllTeams = function(req,res){
             res.sendStatus(404);
         }
     });
-}
+};
 
 //USER ID
 //Keep track of Session
@@ -61,11 +53,9 @@ var findActiveUserIDs = function(req,res){
 };
 
 // UPDATE USER ID
-// Updates the active user id at the begining of the session
+// Updates the active user id at the beginning of the session
 var updateActiveUserID = function(req,res){
-
     var inputID = req.params.id;
-
     ActiveUserIDs.findOneAndUpdate({_id: '000000000000000000000001'}, {$set:{donorID: inputID}}, {new:true},function(err, doc){
         if(!err){
             res.send(doc);

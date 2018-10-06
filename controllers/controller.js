@@ -10,9 +10,6 @@ const fetchProfile = (req, res) => {
     res.render("profile");
 };
 
-
-
-
 const fetchTeams = (req, res) => {
     res.render("teams");
 };
@@ -52,11 +49,15 @@ const fetchEvents = (req, res) => {
     res.render("events");
 };
 
+const fetchChat = (req,res) =>{
+    res.render("chat")
+};
+
 const fetch404 = (req, res) => {
     res.render("404");
 };
 
 
 module.exports = {
-    fetchLanding, fetchHome, fetchProfile, fetchEventPage, fetchEvents, fetchTeams, fetchBookApp, fetchSignIn, fetchSignUp, fetchInfo, fetchContact, fetchAbout, fetch404
+    fetchLanding, fetchHome, fetchProfile, fetchEventPage, fetchEvents, fetchTeams, fetchBookApp, fetchSignIn, fetchSignUp, fetchInfo, fetchContact, fetchAbout, fetch404, fetchChat
 }

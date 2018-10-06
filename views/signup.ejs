@@ -13,7 +13,7 @@
                 <h6 class="font-weight-bold mt-2">Personal Details</h6>
                 <p>
 
-                    <div id="myForm" class="form-group form-inline mb-3">
+                    <div id="myForm" class="form-group form-inline">
                         <div class="ml-2">
                             <!--FirstName-->
                             <p class="ml-1 mb-1 font-weight-bold">First Name <span class="text-danger">*</span></p>
@@ -35,62 +35,21 @@
                             <div class="invalid-feedback">Please enter a valid email.</div>
                             <div class="valid-feedback">&nbsp;</div>
                         </div>
+
+                    </div>
+
+                    <div class="form-group form-inline">
                         <div>
                             <!--DATEOFBIRTH-->
                             <p class="ml-1 mb-1 font-weight-bold">Date of birth <span class="text-danger">*</span></p>
                             <input id="datepicker" width="150" class=" mx-auto" required data-provide="datepicker">
                             <!--<input id="dateOfBirth" type="text" class="form-control ml-1 date"  >-->
-                            <div class="invalid-feedback">Please enter a valid email.</div>
+                            <div class="invalid-feedback">Please enter a valid date of birth.</div>
                             <div class="valid-feedback">&nbsp;</div>
                         </div>
-
                     </div>
 
-                    <div class="form-group form-inline mb-3">
-                        <div>
-                            <!--MOBILE-->
-                            <p class="ml-1 mb-1 font-weight-bold">Mobile <span class="text-danger">*</span></p>
-                            <input id="mobile" type="number" class="form-control" size=15 required>
-                            <div class="invalid-feedback">Please enter a valid mobile number.</div>
-                            <div class="valid-feedback">&nbsp;</div>
-                        </div>
-                        <div>
-                            <!--PASSWORD-->
-                            <p class="ml-1 mb-1 font-weight-bold">Password <span class="text-danger">*</span></p>
-                            <input id="password" type="password" class="form-control ml-1" size=15 required>
-                            <div class="invalid-feedback ml-1">Please enter a valid mobile number.</div>
-                            <div class="valid-feedback ml-1">&nbsp;</div>
-                        </div>
-                    </div>
-
-                </p>
-
-                <hr/>
-
-                <h6 class="font-weight-bold mt-2">Address</h6>
-
-                <p>
-                    <div class="form-group form-inline mb-3">
-                        <div>
-                            <!--ADDRESS-->
-                            <p class="ml-1 mb-1 font-weight-bold">Address <span class="text-danger">*</span></p>
-                            <input id="address" type="text" class="form-control"  size=30 required>
-                        </div>
-                    </div>
-
-                    <div class="form-group form-inline mb-3">
-                        <div>
-                            <!--SUBURB/CITY-->
-                            <p class="ml-1 mb-1 font-weight-bold">Suburb/City <span class="text-danger">*</span></p>
-                            <input id="city" type="text" class="form-control"  size=15 required>
-                        </div>
-
-                        <div class="ml-2">
-                            <!--POSTCODE-->
-                            <p class="ml-1 mb-1 font-weight-bold">Postcode <span class="text-danger">*</span></p>
-                            <input id="postcode" type="text" class="form-control"  size=6 required>
-                        </div>
-
+                    <div class="form-group form-inline">
                         <div class="ml-2">
                             <!--STATE-->
                             <p class="ml-1 mb-1 font-weight-bold">State<span class="text-danger">*</span></p>
@@ -99,14 +58,42 @@
                                 <option selected disabled hidden></option>
                                 <option value="1">NSW</option>
                                 <option value="2">VIC</option>
-                                <option value="3">WA</option>
-                                <option value="4">SA</option>
-                                <option value="5">TAS</option>
-                                <option value="6">ACT</option>
-                                <option value="7">NT</option>
+                                <option value="3">QLD</option>
+                                <option value="4">WA</option>
+                                <option value="5">SA</option>
+                                <option value="6">TAS</option>
+                                <option value="7">ACT</option>
+                                <option value="8">NT</option>
                             </select>
                         </div>
                     </div>
+
+                    <div class="form-group form-inline">
+                        <div class="ml-2">
+                            <!--School Year-->
+                            <p class="ml-1 mb-1 font-weight-bold">School/University Year<span class="text-danger">*</span></p>
+                            <!--School year selector-->
+                            <select id="schoolyear" class="custom-select" required>
+                                <option selected disabled hidden></option>
+                                <option value="1">School - Year 11</option>
+                                <option value="2">School - Year 12</option>
+                                <option value="3">University - First Year</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+<div class="form-group form-inline mb-3">
+
+                        <div>
+                            <!--PASSWORD-->
+                            <p class="ml-1 mb-1 font-weight-bold">Password <span class="text-danger">*</span></p>
+                            <input id="password" type="password" class="form-control ml-1" size=15 required>
+                            <div class="invalid-feedback ml-1">Please enter a valid password.</div>
+                            <div class="valid-feedback ml-1">&nbsp;</div>
+                        </div>
+                    </div>
+
                 </p>
 
                 <hr/>

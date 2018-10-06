@@ -1,6 +1,6 @@
 // Create database
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://admin:admin@ds263089.mlab.com:63089/donorspace_db1', function(err){
+mongoose.connect('mongodb://admin:password123@ds123753.mlab.com:23753/catalyst2018', function(err){
     if(!err){
         console.log('Connected to MongoDB');
     }
