@@ -1,8 +1,8 @@
 body {
     /* Background colour in case image doesn't load */
-    background-color: #ff5a5a;
+    background-color: #73B5D6;
 
-    background-image: url("../img/bgtile.png");
+    /*background-image: url("../img/bgtile.png"); */
     background-size: 450px;
 
     color: #111;
@@ -25,7 +25,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .font-red {
-    color: #ff5a5a;
+    color: #528199;
 }
 
 .ls-1 {
@@ -76,7 +76,7 @@ input[type=number]::-webkit-outer-spin-button {
     height: 5px;
     /*background: #ff5a5a;*/
     background: #fff;
-    box-shadow: 1px 1px #cc2727;
+    box-shadow: 1px 1px #528199;
     border-radius: 50%;
     animation: lds-default 1.2s linear infinite;
 }
