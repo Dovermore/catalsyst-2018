@@ -45,10 +45,6 @@ const fetchEventPage = (req, res) => {
     res.render("eventpage");
 };
 
-const fetchEvents = (req, res) => {
-    res.render("events");
-};
-
 const fetchChat = (req,res) =>{
     res.render("chat")
 };
@@ -57,11 +53,25 @@ const fetch404 = (req, res) => {
     res.render("404");
 };
 
+
+// All company pages, brilliantly hard coded
+const fetchDeloittePage = (req, res) => {
+    res.render("deloitte");
+};
+
+const fetchSapPage = (req, res) => {
+    res.render("sap");
+};
+
+const fetchAtlassianPage = (req, res) => {
+    res.render("atlassian");
+}
+
 const fetchCompany = (req, res) => {
     res.render("company");
 };
 
 
 module.exports = {
-    fetchLanding, fetchHome, fetchProfile, fetchEventPage, fetchEvents, fetchTeams, fetchBookApp, fetchSignIn, fetchSignUp, fetchInfo, fetchContact, fetchAbout, fetch404, fetchChat, fetchCompany
+    fetchLanding, fetchHome, fetchProfile, fetchEventPage, fetchEvents, fetchTeams, fetchBookApp, fetchSignIn, fetchSignUp, fetchInfo, fetchContact, fetchAbout, fetch404, fetchChat, fetchDeloittePage, fetchSapPage, fetchAtlassianPage
 }

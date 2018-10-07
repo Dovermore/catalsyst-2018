@@ -160,3 +160,24 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 10px;
 
 }
+
+.active_chat{
+    float: left;
+    padding: 8%;
+    color: blue;
+}
+
+.inactive_chat{
+    padding: 8%;
+    float: left;
+    color: lightblue;
+}
+
+.prev_chat{
+    float: left;
+
+}
+
+.pad_ten_left{
+    margin-left: 1%;
+}
