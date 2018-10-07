@@ -1,14 +1,60 @@
 <%- include('./partials/initial', {title: 'Chat', status: 'member'}) %>
+<div>
 
-<div class = "mx-auto bg-light w-50 mt-0 mb-3 px-3 py-3 rounded shadow-sm">
-    <p id="chat" ></p>
-</div>
+    <table class="pad_ten_left prev_chat bg-light rounded shadow-sm ">
+        <tr>
+            <th></th>
+            <th>Company</th>
+        </tr>
+        <tr>
+            <td><a href="chat" class="active_chat"><img src="img/face1.png" alt="Profile pic" width="48" height="48"></a></td>
+            <td class="active_chat">Google</td>
+        </tr>
+        <tr>
+            <td><a href="chat" class="inactive_chat"><img src="img/face2.png" alt="Profile pic" width="48" height="48"></a></td>
+            <td class="inactive_chat">Amazone</td>
+        </tr>
+        <tr>
+            <td><a href="chat" class="inactive_chat"><img src="img/face3.png" alt="Profile pic" width="48" height="48"></a></td>
+            <td class="inactive_chat">A pull</td>
+        </tr>
+        <tr>
+            <td><a href="chat" class="inactive_chat"><img src="img/face4.png" alt="Profile pic" width="48" height="48"></a></td>
+            <td class="inactive_chat">Can (turn) on</td>
+        </tr>
+        <tr>
+            <td><a href="chat" class="inactive_chat"><img src="img/face5.png" alt="Profile pic" width="48" height="48"></a></td>
+            <td class="inactive_chat">Adobee</td>
+        </tr>
+        <tr>
+            <td><a href="chat" class="inactive_chat"><img src="img/face6.png" alt="Profile pic" width="48" height="48"></a></td>
+            <td class="inactive_chat">Dell oi tea</td>
+        </tr>
+        <tr>
+            <td><a href="chat" class="inactive_chat"><img src="img/face7.png" alt="Profile pic" width="48" height="48"></a></td>
+            <td class="inactive_chat">Face kindle</td>
+        </tr>
+        <tr>
+            <td><a href="chat" class="inactive_chat"><img src="img/face8.png" alt="Profile pic" width="48" height="48"></a></td>
+            <td class="inactive_chat">IbN</td>
+        </tr>
 
-<div class = "mx-auto bg-light w-50 mt-0 mb-3 px-3 py-3 rounded shadow-sm">
-    <input type="chat_msg" name="chatbox" id="chat_box" class="chat_box" style="overflow-y: scroll; max-height: 600px;">
-    <br>
-    <input type="hidden" value="Submit" onclick="add_to_chat();" id="chat_input">
+    </table>
+    <div class = "mx-auto bg-light w-50 mt-0 mb-3 px-3 py-3 rounded shadow-sm">
+        <img src="img/face1.png" class="prev_chat" width="48" height="48">
+        <p class="center_text"><b>Jane Doe from Google</b></p>
+        <p id="chat"></p>
 
+    </div>
+
+    <div class = "mx-auto bg-light w-50 mt-0 mb-3 px-3 py-3 rounded shadow-sm">
+
+
+        <input type="chat_msg" name="chatbox" id="chat_box" class="chat_box" style="overflow-y: scroll; max-height: 600px;">
+        <br>
+        <input type="hidden" value="Submit" onclick="add_to_chat();" id="chat_input">
+
+    </div>
 </div>
 
 <script src="js/chat.js"></script>
