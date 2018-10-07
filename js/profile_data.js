@@ -72,13 +72,13 @@ function processProfileData() {
         $.getJSON( '/api/' + userid, function(data) {
             // Fill the current info with text from the database
             $("#fullName").text(data.firstname+ ' ' + data.lastname);
-            $("#dob").text(data.dateofbirth);
+            $("#dob").text('1 Jan 1998');
             $("#address").text(data.address);
             $("#city").text(data.suburb);
             $("#postcode").text(data.postcode);
             $("#state").text(data.state);
             $("#mobile").text(data.phone);
-            $("#email").text(data.email);
+            $("#email").text('maxwell.caddie@email.com');
 
             // If a user hasn't donated, prompt them to do so.
             if (data.weight == "Donate to find out") {

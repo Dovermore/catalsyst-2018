@@ -18,5 +18,5 @@ app.use("/js", express.static(__dirname + '/js'));
 app.use("/", routes);
 
 app.listen(PORT, () => {
-    console.log(`Express listening on port ${PORT}`);
+   console.log(`Express listening on port ${PORT}`);
 });
