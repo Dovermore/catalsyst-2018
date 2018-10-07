@@ -1,8 +1,11 @@
+<%- include('./partials/initial', {title: 'Chat', status: 'member'}) %>
 
-<%- include('./partials/initial', {title: 'Sign Up', status: 'guest'}) %>
+<p id="chat" class = "mx-auto bg-light w-50 mt-0 mb-3 px-3 py-3 rounded shadow-sm"></p>
+
+<div>
+    <input type="chat_msg" name="chatbox" id="chat_box" class="w-50" style="overflow-y: scroll; max-height: 600px;">
 
 
-<div class="mx-auto bg-light w-50 mt-0 mb-3 px-3 py-3 rounded shadow-sm" style="min-width: 450px;">
-    
+    <input type="submit" value="Submit" onclick="x();" id="chat_input">
 </div>
-
+<script src="js/chat.js"></script>
