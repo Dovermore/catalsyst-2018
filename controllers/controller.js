@@ -41,10 +41,6 @@ const fetchBookApp = (req, res) => {
     res.render("appointment");
 };
 
-const fetchEventPage = (req, res) => {
-    res.render("eventpage");
-};
-
 const fetchChat = (req,res) =>{
     res.render("chat")
 };
@@ -68,10 +64,10 @@ const fetchAtlassianPage = (req, res) => {
 }
 
 const fetchCompany = (req, res) => {
-    res.render("company");
+    res.render("events");
 };
 
 
 module.exports = {
-    fetchLanding, fetchHome, fetchProfile, fetchEventPage, fetchEvents, fetchTeams, fetchBookApp, fetchSignIn, fetchSignUp, fetchInfo, fetchContact, fetchAbout, fetch404, fetchChat, fetchDeloittePage, fetchSapPage, fetchAtlassianPage
+    fetchLanding, fetchHome, fetchProfile, fetchTeams, fetchBookApp, fetchSignIn, fetchSignUp, fetchInfo, fetchContact, fetchAbout, fetch404, fetchChat, fetchDeloittePage, fetchSapPage, fetchAtlassianPage, fetchCompany
 }
