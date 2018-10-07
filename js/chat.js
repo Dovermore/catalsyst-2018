@@ -13,11 +13,22 @@ document.getElementById("chat_box").addEventListener("keyup", function(event) {
 });
 
 
-function x() {
+function add_to_chat() {
     //Get the chat line and add the text in the chat box
     document.getElementById("chat").innerHTML += document.getElementById("chat_box").value + "<br>";
-    document.getElementById("chat").innerHTML += chat_messages[counter++] + "<br>";
     //Clear the chat box
     document.getElementById("chat_box").value = "";
 
+    //Time before random response
+    var timer = (chat_messages[counter].length+2)*100;
+
+    //Make the other user "respond"
+    setTimeout(random_reponse,timer);
+
+
+
 };
+
+function random_reponse(){
+    document.getElementById("chat").innerHTML += chat_messages[counter++] + "<br>";
+}
