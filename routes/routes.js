@@ -20,9 +20,11 @@ router.get("/profile", controller.fetchProfile);
 router.get("/teams", controller.fetchTeams);
 router.get("/eventpage", controller.fetchEventPage);
 router.get("/events", controller.fetchEvents);
+
 // router.get("/teamprofile", controller.fetchTeam);
 router.get("/book", controller.fetchBookApp);
 router.get("/chat",controller.fetchChat);
+router.get("/company", controller.fetchCompany);
 
 
 
