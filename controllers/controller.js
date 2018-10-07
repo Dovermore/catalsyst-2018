@@ -58,8 +58,8 @@ const fetch404 = (req, res) => {
 };
 
 const fetchCompany = (req, res) => {
-    res.render("company")
-}
+    res.render("company");
+};
 
 
 module.exports = {
