@@ -45,10 +45,6 @@ const fetchEventPage = (req, res) => {
     res.render("eventpage");
 };
 
-const fetchEvents = (req, res) => {
-    res.render("events");
-};
-
 const fetchChat = (req,res) =>{
     res.render("chat")
 };
@@ -56,6 +52,7 @@ const fetchChat = (req,res) =>{
 const fetch404 = (req, res) => {
     res.render("404");
 };
+
 
 // All company pages, brilliantly hard coded
 const fetchDeloittePage = (req, res) => {
@@ -68,6 +65,10 @@ const fetchSapPage = (req, res) => {
 
 const fetchAtlassianPage = (req, res) => {
     res.render("atlassian");
+}
+
+const fetchCompany = (req, res) => {
+    res.render("company");
 };
 
 
