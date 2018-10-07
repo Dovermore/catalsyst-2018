@@ -163,10 +163,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 .active_chat{
     float: left;
+    padding: 10px;
     color: blue;
 }
 
 .inactive_chat{
+    padding: 10px;
     float: left;
     color: lightblue;
 }
