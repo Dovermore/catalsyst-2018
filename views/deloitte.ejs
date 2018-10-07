@@ -39,25 +39,55 @@
                     <!-- Tab panes -->
                     <div id="test" class="tab-content mt-3">
                         <div class="tab-pane container fade show active" id="details">
+                            
+                            <h3 class="font-rubik text-uppercase">Company Product/Services</h3>
+                            <div class="row">
+                              <div class="col-4">
+                                <div class="list-group" id="list-tab" role="tablist">
+                                  <a class="list-group-item list-group-item-action active" id="list-consulting-list" data-toggle="list" href="#list-consulting" role="tab" aria-controls="home">Consulting</a>
+                                  <a class="list-group-item list-group-item-action" id="list-riskadv-list" data-toggle="list" href="#list-riskadv" role="tab" aria-controls="profile">Risk Advisory</a>
+                                  <a class="list-group-item list-group-item-action" id="list-financialadv-list" data-toggle="list" href="#list-financialadv" role="tab" aria-controls="messages">Financial Advisory</a>
+                                  <a class="list-group-item list-group-item-action" id="list-economics-list" data-toggle="list" href="#list-economics" role="tab" aria-controls="settings">Economics</a>
+                                </div>
+                              </div>
+                              <div class="col-8">
+                                <div class="tab-content" id="nav-tabContent">
+                                  <div class="tab-pane fade show active" id="list-consulting" role="tabpanel" aria-labelledby="list-consulting-list">We are about thinking and doing, strategy and implementation. We combine specialist skills in operations, finance, people management, strategy and technology with extensive industry experience to make a difference to the operational performance of our top tier public and private sector clients.</div>
+                                  <div class="tab-pane fade" id="list-riskadv" role="tabpanel" aria-labelledby="list-riskadv-list">Leading organisations understand that risk is a source of competitive advantage. By managing risk more effectively these organisations unleash their full potential, creating and protecting value for all of their stakeholders.</div>
+                                  <div class="tab-pane fade" id="list-financialadv" role="tabpanel" aria-labelledby="list-financialadv-list">Deloitte provides a broad range of financial advisory services around M&A, restructuring, economics and capital optimisation. We also help CFO’s create better business performance through finance transformation, turnaround, business modelling and real estate advisory services.</div>
+                                  <div class="tab-pane fade" id="list-economics" role="tabpanel" aria-labelledby="list-economics-list">Our economics practice, Deloitte Access Economics, provides clients with deep economic rigour that comes with practical commercial advice to help shape public policy, deliver business insights and inform investment strategy.</div>
+                                </div>
+                              </div>
+                            </div>
+                            <hr/>
+                            
                             <h3 class="font-rubik text-uppercase">Mentoring Details</h3>
                             
                             <strong>Registered Mentors:</strong>
                             <p class="d-inline">17</p><br/>
-
+                            <br/>
                             <strong>Mentoring Areas:</strong>
-                            <ul class="list-group">
-                                <li class="list-group-item">Management</li>
-                                <li class="list-group-item">Accounting & Auditing</li>
-                                <li class="list-group-item">Web Development</li>
-                                <li class="list-group-item">Data Analysis</li>
-                            </ul><br/>
+                            <div class="row">
+                              <div class="col-4">
+                                <div class="list-group" id="list-tab" role="tablist">
+                                  <a class="list-group-item list-group-item-action" id="list-riskadv-list" data-toggle="list" href="#list-accaud" role="tab" aria-controls="profile">Accounting & Auditing</a>
+                                  <a class="list-group-item list-group-item-action" id="list-financialadv-list" data-toggle="list" href="#list-webdev" role="tab" aria-controls="messages">Web Development</a>
+                                  <a class="list-group-item list-group-item-action" id="list-economics-list" data-toggle="list" href="#list-dataanalysis" role="tab" aria-controls="settings">Data Analysis</a>
+                                  <a class="list-group-item list-group-item-action active" id="list-consulting-list" data-toggle="list" href="#list-oilmining" role="tab" aria-controls="home">Consulting</a>
+                                </div>
+                              </div>
+                              <div class="col-8">
+                                <div class="tab-content" id="nav-tabContent">
+                                  <div class="tab-pane fade show active" id="list-oilmining" role="tabpanel" aria-labelledby="list-oilmining-list">it's not universal, but most things will be common.</div>
+                                  <div class="tab-pane fade" id="list-accaud" role="tabpanel" aria-labelledby="list-accaud-list">If you study accounting basically there are two different paths you can choose. Public accounting and private or managerial accounting.</div>
+                                  <div class="tab-pane fade" id="list-webdev" role="tabpanel" aria-labelledby="list-webdev-list">We no longer live in a world of newspapers or magazines. No one looks at snail-mail, or barely even emails now. We live in a world where everything is done on online, where you have only a few seconds to capture someone on your website. </div>
+                                  <div class="tab-pane fade" id="list-dataanalysis" role="tabpanel" aria-labelledby="list-dataanalysis-list">My typical day will vary depending on where we are in the lifecycle of a product release. If we are actively rolling out a new feature, I will be monitoring and digging into metrics to understand where we are under/outperforming.</div>
+                                </div>
+                              </div>
+                            </div>
                             <hr/>
 
-                            <h3 class="font-rubik text-uppercase"></h3>
-                            <strong>Street Address:</strong>
-                            <p id="address" class="d-inline">Loading...</p><br/>
 
-                            </p>
                             <!--<div class="textFieldInput" hidden>-->
                                 <!--<div class="form-group form-inline mb-1">-->
                                     <!--<strong>Street Address:</strong> <input type="text" class="form-control form-control-sm ml-1" value="53 Imaginary Lane" size="40"/><br/>-->
@@ -73,68 +103,49 @@
                                 <!--</div>-->
                             <!--</div>-->
 
-                            <hr/>
+                            <h3 class="font-rubik text-uppercase">Event Summary</h3>
 
-                            <h3 class="font-rubik text-uppercase">Donor Information</h3>
 
-                            <div id="donorinfo">
-                            <strong>Donor Number:</strong>
-                            <p id="donornum" class="d-inline">Loading...</p><br/>
-
-                            <strong>Blood Type:</strong>
-                            <p id="bloodtype" class="d-inline">Loading...</p><br/>
-
-                            <strong>Haemoglobin:</strong>
-                            <p id="weight" class="d-inline">Loading...</p><br/>
-
-                            <strong>Height:</strong>
-                            <p id="height" class="d-inline">Loading...</p><br/>
-
-                            <strong>Weight:</strong>
-                            <p id="haemoglobin" class="d-inline">Loading...</p><br/>
-                            </div>
+                            <strong>Event Number:</strong>
+                            <p class="d-inline">37</p><br/>
+                            <br/>
+                            <strong>Event Locations:</strong><br/>
+                            <img src="/img/map_pin.png" width="775px">
 
                         </div>
                         <div class="tab-pane fade" id="members">
-                                <!--<div class="col-sm-6 align-self-center">-->
-                                    <!--<h1 class="text-center font-weight-bold font-rubik ls-2 display-4">0</h1>-->
-                                    <!--<h5 class="text-center font-rubik ls-1">Donations Made</h5>-->
-
-                                    <!--<hr/>-->
-
-                                    <!--<h1 class="text-center font-weight-bold font-rubik ls-2 display-4">0</h1>-->
-                                    <!--<h5 class="text-center font-rubik ls-1">Litres Donated</h5>-->
-
-                                    <!--<hr/>-->
-
-                                    <!--<h1 class="text-center font-weight-bold font-rubik ls-1 display-4">0</h1>-->
-                                    <!--<h5 class="text-center font-rubik ls-1">Lives Saved</h5>-->
-                                <!--</div>-->
-
-                            <div class="d-inline-block ml-3 text-center" id="pieGraph">
-                                <h2 class="font-rubik">Donations</h2>
-                                <canvas id="myChart" class="mx-auto" width="180" height="180"></canvas>
-
-                                <hr/>
-
-                                <div class="text-left d-inline-block">
-                                    <h6>Key</h6>
-                                    <div class="label right"><div class="graphKeyItem bg-danger"></div> Blood Donations</div>
-                                    <div class="label right"><div class="graphKeyItem bg-primary"></div> Plasma Donations</div>
-                                    <div class="label right"><div class="graphKeyItem bg-warning"></div> Bone Marrow Donations</div>
-                                </div>
+                            <div class="row"> 
+                              <div class="column">
+                                  <a class="nav-link" href="/chat"><img src="/img/face1.png" width="150px"></a>
+                                  <a class="nav-link" href="/chat"><img src="/img/face2.png" width="150px"></a>
+                                  <a class="nav-link" href="/chat"><img src="/img/face3.png" width="150px"></a>
+                              </div>
+                              <div class="column">
+                                  <a class="nav-link" href="/chat"><img src="/img/face5.png" width="150px"></a>
+                                  <a class="nav-link" href="/chat"><img src="/img/face6.png" width="150px"></a>
+                                  <a class="nav-link" href="/chat"><img src="/img/face8.png" width="150px"></a>
+                              </div> 
+                              <div class="column">
+                                <a class="nav-link" href="/chat"><img src="/img/face9.png" width="150px"></a>
+                                <a class="nav-link" href="/chat"><img src="/img/face10.jpg" width="150px"></a>
+                                <a class="nav-link" href="/chat"><img src="/img/face11.jpg" width="150px"></a>
+                              </div>
+                              <div class="column">
+                                  <a class="nav-link" href="/chat"><img src="/img/face7.png" width="150px"></a>
+                                <a class="nav-link" href="/chat"><img src="/img/face4.png" width="150px"></a>
+                              </div>
+                                
                             </div>
                         </div>
-                        <div class="tab-pane container fade" id="events">
-                            <h3 class="font-rubik text-uppercase">Past Appointments</h3>
+                        <div class="tab-pane fade" id="events">
+                            <h3 class="font-rubik text-uppercase">Future Events</h3>
                             <div style="max-height: 500px; overflow-y: auto;">
                                 <table class="table table-striped">
                                     <thead>
                                     <th>Date</th>
                                     <th>Location</th>
-                                    <th class="text-center">Blood</th>
-                                    <th class="text-center">Plasma</th>
-                                    <th class="text-center">Bone</th>
+                                    <th class="text-center">Industry</th>
+                                    <th class="text-center">Mentors</th>
                                     </thead>
                                     <tbody id="prevDon">
                                     </tbody>
