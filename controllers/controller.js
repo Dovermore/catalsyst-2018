@@ -57,7 +57,11 @@ const fetch404 = (req, res) => {
     res.render("404");
 };
 
+const fetchCompany = (req, res) => {
+    res.render("company");
+};
+
 
 module.exports = {
-    fetchLanding, fetchHome, fetchProfile, fetchEventPage, fetchEvents, fetchTeams, fetchBookApp, fetchSignIn, fetchSignUp, fetchInfo, fetchContact, fetchAbout, fetch404, fetchChat
+    fetchLanding, fetchHome, fetchProfile, fetchEventPage, fetchEvents, fetchTeams, fetchBookApp, fetchSignIn, fetchSignUp, fetchInfo, fetchContact, fetchAbout, fetch404, fetchChat, fetchCompany
 }
