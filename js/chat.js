@@ -15,7 +15,7 @@ document.getElementById("chat_box").addEventListener("keyup", function(event) {
 
 function add_to_chat() {
     //Get the chat line and add the text in the chat box
-    document.getElementById("chat").innerHTML += document.getElementById("chat_box").value + "<br>";
+    document.getElementById("chat").innerHTML += "<b>"+document.getElementById("chat_box").value + "</b><br>";
     //Clear the chat box
     document.getElementById("chat_box").value = "";
 
