@@ -57,7 +57,20 @@ const fetch404 = (req, res) => {
     res.render("404");
 };
 
+// All company pages, brilliantly hard coded
+const fetchDeloittePage = (req, res) => {
+    res.render("deloitte");
+};
+
+const fetchSapPage = (req, res) => {
+    res.render("sap");
+};
+
+const fetchAtlassianPage = (req, res) => {
+    res.render("atlassian");
+};
+
 
 module.exports = {
-    fetchLanding, fetchHome, fetchProfile, fetchEventPage, fetchEvents, fetchTeams, fetchBookApp, fetchSignIn, fetchSignUp, fetchInfo, fetchContact, fetchAbout, fetch404, fetchChat
+    fetchLanding, fetchHome, fetchProfile, fetchEventPage, fetchEvents, fetchTeams, fetchBookApp, fetchSignIn, fetchSignUp, fetchInfo, fetchContact, fetchAbout, fetch404, fetchChat, fetchDeloittePage, fetchSapPage, fetchAtlassianPage
 }

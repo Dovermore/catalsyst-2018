@@ -18,11 +18,15 @@ router.get("/signup", controller.fetchSignUp);
 router.get("/signin", controller.fetchSignIn);
 router.get("/profile", controller.fetchProfile);
 router.get("/teams", controller.fetchTeams);
-router.get("/eventpage", controller.fetchEventPage);
-router.get("/events", controller.fetchEvents);
-// router.get("/teamprofile", controller.fetchTeam);
+router.get("/company", controller.fetchEvents);
 router.get("/book", controller.fetchBookApp);
 router.get("/chat",controller.fetchChat);
+
+router.get("/eventpage",controller.fetchEventPage);
+
+router.get("/company/deloitte",controller.fetchDeloittePage);
+router.get("/company/sap",controller.fetchSapPage);
+router.get("/company/atlassian",controller.fetchAtlassianPage);
 
 
 
