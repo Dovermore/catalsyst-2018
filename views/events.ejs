@@ -10,7 +10,7 @@ THE ROUGH PLANNED FUNCTIONALITY OF THIS SECTION OF THE WEBSITE.
 <%- include('./partials/initial', {title: 'Events', status: 'member'}) %>
 
     <div class="mx-auto bg-light w-25 mt-0 mb-3 px-3 py-3 rounded shadow-sm" style="min-width: 350px;">
-        <h2 class="ml-2 text-center font-rubik ls-2 mx-auto mb-0 text-uppercase font-weight-bold">Upcoming Events</h2>
+        <h2 class="ml-2 text-center font-rubik ls-2 mx-auto mb-0 text-uppercase font-weight-bold">Partner Companies</h2>
 
             <!--<form action="/action_page.php">-->
                 <!--<div class="form-group form-inline mb-0">-->
@@ -38,16 +38,42 @@ THE ROUGH PLANNED FUNCTIONALITY OF THIS SECTION OF THE WEBSITE.
             <div>
                 <!--<h5 class="text-center">Your Teams</h5>-->
                 <div>
-                    <!--<div class="card d-inline-block bg-light mt-3" id = "allteams">-->
-                    <%- include("./partials/placeholderevent",
-                    {
-                        name: 'The Australian University Donor Push',
-                        description: 'The AUSUNI Donor Push is an event which all Australian Universities are partaking in.\
-                        The aim is for each university to have 700 people donating, a very small portion of their monstrous cohort.',
-                        goal: '350L',
-                        teams: '37'}) %>
-                    <%- include("./partials/placeholderevent", {name: 'The Tech Giants\' Giant Donation', description: '.', goal: '100L', teams: '19'}) %>
-                    <%- include("./partials/placeholderevent", {name: 'University of Melbourne College Competition', description: '.', goal: '20L', teams: '6'}) %>
+                    <div class="card bg-light mt-3 mx-2">
+                        <div class="media mb-0 px-3 py-3">
+                            <div class="media-body align-self-center">
+                                <img src="/img/Deloitte.png" width="150">
+                                <h5 class="mb-2 font-weight-bold">Deloitte</h5>
+                                <a class="nav-link m-0 p-0" href="company/deloitte">Check Profile</a>
+                                <hr/>
+                                <p class="mb-0" style="text-align:justify"><strong>“Deloitte”</strong> is the brand under which tens of thousands of dedicated professionals in independent firms throughout the world collaborate to provide audit, consulting, financial advisory, risk management and tax services to selected clients.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card bg-light mt-3 mx-2">
+                        <div class="media mb-0 px-3 py-3">
+                            <div class="media-body align-self-center">
+                                <img src="/img/SAP.svg" width="150">
+                                <h5 class="mb-2 font-weight-bold">SAP</h5>
+                                <a class="nav-link m-0 p-0" href="company/sap">Check Profile</a>
+                                <hr/>
+                                <p class="mb-0" style="text-align:justify"><strong>“SAP”</strong> is a software and service provider. The Company offers enterprise application software. The Company operates through two segments: Applications, Technology & Services segment, and the SAP Business Network segment. ... Its SAP S/4HANA is a business suite, which stores and processes data.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card bg-light mt-3 mx-2">
+                        <div class="media mb-0 px-3 py-3">
+                            <div class="media-body align-self-center">
+                                <img src="/img/Atlassian.png" width="150">
+                                <h5 class="mb-2 font-weight-bold">Atlassian</h5>
+                                <a class="nav-link m-0 p-0" href="company/atlassian">Check Profile</a>
+                                <hr/>
+                                <p class="mb-0" style="text-align:justify"><Strong>Atlassian</Strong> makes Software development & collaboration tools. For teams that get things done efficiently. Collaborate & Grow. Code, Build & Ship. Plan, Track, Support. Tools For Teams.</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
