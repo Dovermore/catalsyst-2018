@@ -1,18 +1,7 @@
 <%- include('./partials/initial', {title: 'Chat', status: 'member'}) %>
-
-<div class = "mx-auto bg-light w-50 mt-0 mb-3 px-3 py-3 rounded shadow-sm">
-    <p id="chat" ></p>
-</div>
-
-<div class = "mx-auto bg-light w-50 mt-0 mb-3 px-3 py-3 rounded shadow-sm">
-    <input type="chat_msg" name="chatbox" id="chat_box" class="chat_box" style="overflow-y: scroll; max-height: 600px;">
-    <br>
-    <input type="hidden" value="Submit" onclick="add_to_chat();" id="chat_input">
-
-</div>
-
 <div>
-    <table style="width:10%">
+
+    <table style="width:10%" class="prev_chat">
         <tr>
             <th></th>
             <th>Company</th>
@@ -51,7 +40,17 @@
         </tr>
 
     </table>
-    
+    <div class = "mx-auto bg-light w-50 mt-0 mb-3 px-3 py-3 rounded shadow-sm">
+        <p id="chat"></p>
+
+    </div>
+
+    <div class = "mx-auto bg-light w-50 mt-0 mb-3 px-3 py-3 rounded shadow-sm">
+        <input type="chat_msg" name="chatbox" id="chat_box" class="chat_box" style="overflow-y: scroll; max-height: 600px;">
+        <br>
+        <input type="hidden" value="Submit" onclick="add_to_chat();" id="chat_input">
+
+    </div>
 </div>
 
 <script src="js/chat.js"></script>
