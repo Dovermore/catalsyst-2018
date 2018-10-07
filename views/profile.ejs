@@ -26,13 +26,13 @@
 
                     <ul class="nav nav-tabs mt-3">
                         <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#details">Your Details</a>
+                            <a class="nav-link active" data-toggle="tab" href="#details">Summary</a>
                         </li>
                         <li class="nav-item startDisabled">
-                            <a class="nav-link" data-toggle="tab" href="#statistics" hidden>Your Statistics</a>
+                            <a class="nav-link" data-toggle="tab" href="#statistics" >Your Interests</a>
                         </li>
                         <li class="nav-item startDisabled">
-                            <a class="nav-link" data-toggle="tab" href="#appointments" hidden>Previous Appointments</a>
+                            <a class="nav-link" data-toggle="tab" href="#appointments" >Events</a>
                         </li>
                     </ul>
 
@@ -74,7 +74,7 @@
 
                             <h3 class="font-rubik text-uppercase">Interests</h3>
                             <strong>Academic:</strong>
-                            <p id="academic interests" class="d-inline">Maths, Physics, IT</p><br/>
+                            <p id="academic interests" class="d-inline">Maths, Physics, Economics</p><br/>
 
                             <strong>Extra-Curricular:</strong>
                             <p id="extrac" class="d-inline">Browsing Stack Overflow & resolving seg faults.</p><br/>
@@ -126,35 +126,72 @@
                                 <!--</div>-->
 
                             <div class="d-inline-block ml-3 text-center" id="pieGraph">
-                                <h2 class="font-rubik">Donations</h2>
+                                <h2 class="font-rubik">This is me.</h2>
                                 <canvas id="myChart" class="mx-auto" width="180" height="180"></canvas>
 
                                 <hr/>
 
                                 <div class="text-left d-inline-block">
                                     <h6>Key</h6>
-                                    <div class="label right"><div class="graphKeyItem bg-danger"></div> Blood Donations</div>
-                                    <div class="label right"><div class="graphKeyItem bg-primary"></div> Plasma Donations</div>
-                                    <div class="label right"><div class="graphKeyItem bg-warning"></div> Bone Marrow Donations</div>
+                                    <div class="label right"><div class="graphKeyItem bg-danger"></div> IT</div>
+                                    <div class="label right"><div class="graphKeyItem bg-primary"></div> Maths</div>
+                                    <div class="label right"><div class="graphKeyItem bg-warning"></div> Economics</div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="tab-pane container fade" id="appointments">
-                            <h3 class="font-rubik text-uppercase">Past Appointments</h3>
+                            <h3 class="font-rubik text-uppercase">Upcoming Events</h3>
                             <div style="max-height: 500px; overflow-y: auto;">
                                 <table class="table table-striped">
                                     <thead>
+                                    <th>Event</th>
                                     <th>Date</th>
                                     <th>Location</th>
-                                    <th class="text-center">Blood</th>
-                                    <th class="text-center">Plasma</th>
-                                    <th class="text-center">Bone</th>
+                                    <!--<th class="text-center">Plasma</th>-->
+                                    <!--<th class="text-center">Bone</th>-->
                                     </thead>
                                     <tbody id="prevDon">
+                                    <td>SAP Pizza & Programming Night</td>
+                                    <td>19/11/18<td>
+                                    <td>St Kilda<td>
+                                    </tbody>
+
+                                </table>
+                            </div>
+
+                            <h3 class="font-rubik text-uppercase">Past Events</h3>
+                            <div style="max-height: 500px; overflow-y: auto;">
+                                <table class="table table-striped">
+                                    <thead>
+                                    <th>Event</th>
+                                    <th>Date</th>
+                                    <th>Location</th>
+                                    <!--<th class="text-center">Plasma</th>-->
+                                    <!--<th class="text-center">Bone</th>-->
+                                    </thead>
+                                    <tbody id="prevDon">
+                                    <td>CISSA Catalyst Hackathon</td>
+                                    <td>7/10/18<td>
+                                    <td>Carlton<td>
+                                    </tbody>
+                                    <tbody id="prevDon">
+                                    <td>SAP Front End Panel</td>
+                                    <td>5/4/18<td>
+                                    <td>St Kilda<td>
+                                    </tbody>
+
+                                    <tbody id="prevDon">
+                                    <td>Deloitte Micro-Economics Workshop</td>
+                                    <td>18/8/18<td>
+                                    <td>CBD<td>
                                     </tbody>
                                 </table>
                             </div>
+
                         </div>
+
+
                     </div>
                 </div>
         </div>

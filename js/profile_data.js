@@ -78,7 +78,7 @@ function processProfileData() {
             $("#postcode").text(data.postcode);
             $("#state").text(data.state);
             $("#mobile").text(data.phone);
-            $("#email").text('maxwell.caddie@email.com');
+            $("#email").text('dan@email.com');
 
             // If a user hasn't donated, prompt them to do so.
             if (data.weight == "Donate to find out") {
@@ -155,7 +155,7 @@ function processDonationData() {
                 }
             });
             if (donations === 0) {
-                $("#prevDon").append("<td>NO DONATIONS</td>");
+                $("#prevDon").append("<td></td>");
             }
 
             else {
