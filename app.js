@@ -1,12 +1,9 @@
-var express = require('express');
-var app = express();
-var bodyParser = require('body-parser');
-var mongoose = require('mongoose');
-var session = require('express-session');
-var MongoStore = require('connect-mongo')(session);
 
-const database = require("./models/db");
-var db = mongoose.connection;
+const express = require("express");
+const app = express();
+
+const db = require("./models/db");
+
 const routes = require("./routes/routes");
 const PORT = process.env.PORT || 3000;
 
