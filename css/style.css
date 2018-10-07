@@ -152,6 +152,11 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 
-.chat_box{
-    letter-spacing: 1px;
+
+.chat_box {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+
 }
